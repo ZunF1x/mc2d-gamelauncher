@@ -107,6 +107,6 @@ public class Logger implements ILogger {
 
     @Override
     public void print(LogState state, String message, Throwable t) {
-        System.out.println("[" + hour.format(date) + "] [" + Thread.currentThread().getName() + "/" + state.getTitle() + "]: " + message + "> " + t.getMessage());
+        System.out.println("[" + hour.format(date) + "] [" + Thread.currentThread().getName() + "/" + state.getTitle() + "]: " + message + " > " + t.getMessage());
     }
 }
